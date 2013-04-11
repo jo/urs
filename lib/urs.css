@@ -1,0 +1,54 @@
+/*
+ * urs
+ * https://github.com/jo/urs
+ *
+ * Copyright (c) 2013 Johannes J. Schmidt
+ * Licensed under the MIT license.
+ */
+.urs-slider {
+  overflow: hidden;
+  position: relative;
+}
+.urs-panel {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  background-color: inherit;
+  /* initial translation */
+  -webkit-transform: translate3d(-50%,0,0);
+  -moz-transform: translate3d(-50%,0,0);
+  -ms-transform: translate3d(-50%,0,0);
+  -o-transform: translate3d(-50%,0,0);
+  transform: translate3d(-50%,0,0);
+  /* disable selection */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.urs-panel .urs-left,
+.urs-panel .urs-right {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.urs-panel .urs-left {
+  text-align: right;
+}
+.urs-panel .urs-right {
+  text-align: left;
+}
+.urs-panel img {
+  max-height: 100%;
+}
+.urs-panel .urs-filling {
+  height: 100%;
+  width: 0;
+}
